@@ -1,0 +1,20 @@
+{
+       "Name": "streamProcessorForBlog",
+       "Input": {
+              "KinesisVideoStream": {
+                     "Arn": "arn:aws:kinesisvideo:us-east-1:423421644306:stream/smartdoorvideostream/1573843218757"
+              }
+       },
+       "Output": {
+              "KinesisDataStream": {
+                     "Arn": "arn:aws:kinesis:us-east-1:423421644306:stream/smartdoordata"
+              }
+       },
+       "RoleArn": "arn:aws:iam::423421644306:role/rekRole",
+       "Settings": {
+              "FaceSearch": {
+                     "CollectionId": "smartcol",
+                     "FaceMatchThreshold": 70.0
+              }
+       }
+}
