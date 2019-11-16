@@ -130,7 +130,7 @@ def lambda_handler(event, context):
                 }
 
             # Extract frame
-            filename = extract_frame()
+            filename = extract_frame(bucket_name)
 
             # Put phone in database
             table_phones = dynamodb.Table('phones')
